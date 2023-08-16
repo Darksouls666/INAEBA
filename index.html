@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>INAEBA</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="HTML5 website template">
+  <meta name="keywords" content="global, template, html, sass, jquery">
+  <meta name="author" content="Bucky Maler">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <style>
+    .dashboard-container {
+      display: flex;
+      justify-content: space-around;
+      margin: 20px;
+    }
+
+    .card {
+      background-color: #16b1eb;
+      border: 3px solid #ccc;
+      border-radius: 10px;
+      padding: 20px;
+      margin: 10px;
+      flex: 1;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .yellow-card {
+      background-color: #d4eb06;
+    }
+
+    .green-card {
+      background-color: #0ad61b;
+    }
+
+    .red-card {
+      background-color: red;
+    }
+
+    .card:hover {
+      transform: scale(1.15);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .card h2,
+    p,
+    a {
+      margin-top: 0;
+      text-align: center;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- notification for small viewports and landscape oriented smartphones -->
+  <div class="device-notification">
+    <a class="device-notification--logo" href="#0">
+      <p>INAEBA</p>
+    </a>
+  </div>
+
+  <div class="perspective effect-rotate-left">
+    <div class="container">
+      <div class="outer-nav--return"></div>
+      <div id="viewport" class="l-viewport">
+        <div class="l-wrapper">
+          <header class="header">
+            <a class="header--logo" href="#0">
+              <p>INAEBA</p>
+            </a>
+            <button class="header--cta cta">Inscribete</button>
+            <div class="header--nav-toggle">
+              <span></span>
+            </div>
+          </header>
+          <nav class="l-side-nav">
+            <ul class="side-nav">
+              <li class="is-active"><span>Inicio</span></li>
+              <li><span>Dashboard</span></li>
+              <li><span>Acerca de nosotros</span></li>
+              <li><span>Contacto</span></li>
+              <li><span>Inscripción</span></li>
+            </ul>
+          </nav>
+          <ul class="l-main-content main-content">
+            <li class="l-section section section--is-active">
+              <div class="intro">
+                <div class="intro--banner">
+                  <h1>Instituto<br>de Alfabetización<br>y Educación <br> Básica para <br>Adultos</h1>
+                  <button class="cta">Inscribete
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118"
+                      style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                      <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                        <path
+                          d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z" />
+                      </g>
+                    </svg>
+                    <span class="btn-background"></span>
+                  </button>
+                  <img src="assets/img/school.png" alt="Welcome">
+                </div>
+                <div class="intro--options">
+                  <a href="#0">
+                    <h3>Visión</h3>
+                    <p style="color: #47bfeb;">Ser la mejor institución educativa del país para jóvenes y adultos, que
+                      se distinga por
+                      contribuir a la disminución del analfabetismo y el rezago educativo</p>
+                  </a>
+                  <a href="#0">
+                    <h3>Misión</h3>
+                    <p style="color: #47bfeb;">Ser una institución pública del gobierno del estado de Guanajuato,
+                      socialmente reconocida que
+                      ofrece servicios educativos de alfabetización, primaria y secundaria, con calidad e inclusión,
+                      para jóvenes y adultos</p>
+                  </a>
+                  <a href="#0">
+                    <h3>valores</h3>
+                    <p style="color: #47bfeb;">Honestidad <br>Lealtad <br> Servicio <br>Calidad <br>Inclusión
+                      <br>Compromiso
+                    </p>
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li class="l-section section">
+              <div class="work">
+                <h1>DASHBOARD</h1>
+                <div class="work--lockup">
+                  <div class="dashboard-container">
+                    <div class="card yellow-card">
+                      <h2>Interacción Social</h2>
+                      <a href="Variables/interaccion-social.html"></a>
+                    </div>
+                    <div class="card yellow-card">
+                      <h2>Comunicación</h2>
+                      <a href="Variables/comunicacion.html"></a>
+                    </div>
+                    <div class="card red-card">
+                      <h2>Rasgos Psicosociales</h2>
+                      <a href="Variables/rasgos-psicosociales.html"></a>
+                    </div>
+                  </div>
+                  <div class="dashboard-container">
+                    <div class="card green-card">
+                      <h2>Reconocimiento</h2>
+                      <h2>Satisfacción</h2>
+                      <h2>Pertenencia</h2>
+                      <a href="Variables/reconocimiento.html"></a>
+                    </div>
+                    <div class="card green-card">
+                      <h2>Promoción</h2>
+                      <a href="Variables/Promocion.html"></a>
+                    </div>
+                    <div class="card yellow-card">
+                      <h2>Formación</h2>
+                      <a href="Variables/Formacion.html"></a>
+                    </div>
+                  </div>
+                  <div class="dashboard-container">
+                    <div class="card green-card">
+                      <h2>Liderazgo</h2>
+                      <a href="Variables/liderazgo.html"></a>
+                    </div>
+                    <div class="card green-card">
+                      <h2>Autonomía e innovación</h2>
+                      <a href="Variables/autonomia.html"></a>
+                    </div>
+                    <div class="card green-card">
+                      <h2>Motivación</h2>
+                      <a href="Variables/motivacion.html"></a>
+                    </div>
+                  </div>
+            </li>
+            <li class="l-section section">
+              <div class="about">
+                <div class="about--banner">
+                  <h2>INAEBA</h2>
+                  <P>El Instituto de Alfabetización y Educación Básica para Adultos (INAEBA) es del giro de servicios ya
+                    que es un organismo público descentralizado, que se encuentra sectorizado a la Secretaría de
+                    Educación, se dedica de manera especifica y exclusivamente a la atención educativa para adultos,
+                    garantizando la excelencia en la calidad de los servicios brindados.</P>
+                  <P>Actualmente dentro del INAEBA en el área administrativa se cuenta con 5 trabajadores, los cuales
+                    realizan diversas actividades con el fin de cumplir con los objetivos planteados dentro del
+                    instituto establecidos por coordinación. </P>
+                  <P>El INAEBA, comprometido con el desarrollo individual y social de la población, ofrece servicios
+                    educativos dirigidos a jóvenes y adultos mayores de 15 años que están fuera del sistema educativo
+                    formal y desean aprender a leer, escribir o concluir su educación básica.</P>
+                  <P>El Instituto adecua sus estrategias metodológicas y materiales didácticos al contexto sociocultural
+                    de la población atendida, siempre bajo el principio de austeridad y optimización de los recursos
+                    humanos y materiales con los que cuenta</P>
+                  <span>
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118"
+                      style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                      <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                        <path
+                          d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z" />
+                      </g>
+                    </svg>
+                  </span>
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li class="l-section section">
+              <div class="contact">
+                <div class="contact--lockup">
+                  <div class="modal">
+                    <div class="modal--information">
+                      <p>Sur 78, Insurgentes, 37805 Dolores Hidalgo Cuna de la Independencia Nacional, Gto.</p>
+                      <a href="mailto:buzon@inaeba.edu.mx">buzon@inaeba.edu.mx</a>
+                      <a href="tel:+148126287560">+52 418 182 0769</a>
+                    </div>
+                    <ul class="modal--options">
+                      <li><a href="#0">Facebook</a></li>
+                      <li><a href="mailto:buzon@inaeba.edu.mx">Contactanos</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="l-section section">
+              <div class="hire">
+                <h2>¿Como podemos ayudarte?</h2>
+                <!-- checkout formspree.io for easy form setup -->
+                <form class="work-request">
+                  <div class="work-request--options">
+                    <span class="options-a">
+                      <input id="opt-1" type="checkbox" value="app design">
+                      <label for="opt-1">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 111"
+                          style="enable-background:new 0 0 150 111;" xml:space="preserve">
+                          <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
+                            <path
+                              d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z" />
+                          </g>
+                        </svg>
+                        PRIMARIA
+                      </label>
+                      <input id="opt-2" type="checkbox" value="graphic design">
+                      <label for="opt-2">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 111"
+                          style="enable-background:new 0 0 150 111;" xml:space="preserve">
+                          <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
+                            <path
+                              d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z" />
+                          </g>
+                        </svg>
+                        SECUNDARIA
+                      </label>
+                    </span>
+                  </div>
+                  <div class="work-request--information">
+                    <div class="information-name">
+                      <input id="name" type="text" spellcheck="false">
+                      <label for="name">Nombre</label>
+                    </div>
+                    <div class="information-email">
+                      <input id="email" type="email" spellcheck="false">
+                      <label for="email">Email</label>
+                    </div>
+                  </div>
+                  <input type="submit" value="Enviar solicitud">
+                </form>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <ul class="outer-nav">
+      <li class="is-active">Inicio</li>
+      <li>Dashboard</li>
+      <li>Acerca</li>
+      <li>Contacto</li>
+      <li>Inscripción</li>
+    </ul>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-2.2.4.min.js"><\/script>')</script>
+  <script src="assets/js/functions-min.js"></script>
+  <script>
+    // Obtén todas las tarjetas por su clase
+    const cards = document.querySelectorAll('.card');
+
+    // URLs correspondientes a cada tarjeta
+    const urls = {
+      'Interacción Social': 'Variables/interaccion-social.html',
+      'Comunicación': 'Variables/comunicacion.html',
+      'Rasgos Psicosociales': 'Variables/rasgos-psicosociales.html',
+      'Reconocimiento': 'Variables/reconocimiento.html',
+      'Satisfacción': 'Variables/satisfaccion.html',
+      'Pertenencia': 'Variables/pertenencia.html',
+      'Promoción': 'Variables/promocion.html',
+      'Formación': 'Variables/formacion.html',
+      'Liderazgo': 'Variables/liderazgo.html',
+      'Autonomía e innovación': 'Variables/autonomia.html',
+      'Motivación': 'Variables/motivacion.html'
+    };
+
+    // Agregar evento de clic a cada tarjeta
+    cards.forEach(card => {
+      card.addEventListener('click', () => {
+        // Obtener el título de la tarjeta clickeada
+        const cardTitle = card.querySelector('h2').textContent;
+
+        // Obtener la URL correspondiente al título
+        const url = urls[cardTitle];
+
+        // Redirigir a la URL
+        window.location.href = url;
+      });
+    });
+  </script>
+</body>
+
+</html>
